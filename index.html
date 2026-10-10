@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gooby Style - Portfolio</title>
+    <!-- Fontes Estilo Retro/Pixel -->
+    <link href="https://fonts.googleapis.com/css2?family=VT323&family=MS+Mothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Janela Principal da Landing Page -->
+    <div class="window" style="max-width: 950px;">
+        <div class="title-bar">
+            <span>💾 Project_Portfolio_v1.0.exe</span>
+            <div class="title-bar-controls">
+                <button>_</button>
+                <button>□</button>
+                <button>×</button>
+            </div>
+        </div>
+
+        <div class="window-body">
+            
+            <!-- BANNER SUPERIOR -->
+            <div class="header-banner">
+                <div style="font-size: 11px; color: #fff; background: rgba(0,0,0,0.6);"></div>
+            </div>
+
+            <!-- ESTRUTURA DE 3 COLUNAS -->
+            <div class="main-layout">
+                <!-- COLUNA 1: Menu Esquerda -->
+                <div>
+                    <div class="retro-box">
+                        <div class="retro-box-header"><span>visitor count</span></div>
+                        <div class="retro-box-content" style="text-align: center; font-family: 'VT323', monospace; font-size: 20px; letter-spacing: 3px;">001253</div>
+                    </div>
+
+                    <div class="retro-box">
+                        <div class="retro-box-header"><span>❖ main ❖</span></div>
+                        <div class="retro-box-content">
+                            <ul class="menu-list" style="list-style: none;">
+                                <li><a href="#">sitemap</a></li>
+                                <li><a href="#">home</a></li>
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">art</a></li>
+                                <li><a href="#">journal</a></li>
+                                <li><a href="#">guides</a></li>
+                                <li><a href="#">guestbook</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- COLUNA 2: Centro (Conteúdo e Apresentação) -->
+                <div>
+                    <div class="retro-box">
+                        <div class="retro-box-header"><span>📝 welcome_message.txt</span></div>
+                        <div class="retro-box-content">
+                            <h1 style="font-size: 16px; margin-bottom: 8px; color: #000080;">✨ Bem-vindo ao Meu Novo Projeto: Web Galeria & Perfis Personalizáveis</h1>
+                            <p>Uma plataforma interativa nostálgica inspirada na estética Y2K e nas páginas clássicas dos anos 2000. Aqui, os usuários poderão guardar suas memórias em fotos e customizar seus próprios perfis livres de widgets, stickers e players retrô!</p>
+                            <div class="alert-box" style="background: #fff0f5; border: 1px dotted #ffb6c1; padding: 6px; margin-top: 8px; font-size: 11px; display: flex; gap: 6px; align-items: center;">
+                                <div class="alert-icon">💡</div>
+                                <div>
+                                    <strong>Status do Projeto:</strong> Em desenvolvimento ativo. Esta landing page serve como demonstração de conceito para o meu portfólio profissional!
+                                </div>
+                            </div>
+
+                            <h3 style="font-size: 15px; margin-top: 10px; margin-bottom: 5px; color: #333;">Principais Funcionalidades Planejadas:</h3>
+                            <ul style="margin-left: 20px; font-size: 13px; margin-bottom: 15px;">
+                                <li>📂 Upload e organização de álbuns de fotos personalizados.</li>
+                                <li>🎨 Editor visual livre de perfil estilo "Carrd/MySpace".</li>
+                                <li>💬 Sistema integrado de chat e recados estilo AIM.</li>
+                            </ul>
+
+                            <div style="text-align: center; margin-top: 20px;">
+                                <a href="#" class="retro-btn" onclick="alert('Obrigado por testar! Em breve o sistema completo estará no ar.')">🚀 Entrar no Projeto / Testar Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- COLUNA 3: Direita (Player de Música e Updates) -->
+                <div>
+                    <!-- Janela: Player de Música Estilo Winamp/Retro -->
+                    <div class="retro-box">
+                        <div class="retro-box-header"><span>🎵 music player</span></div>
+                        <div class="retro-box-content" style="text-align: center;">
+                            <div style="background: #000; color: #00ff00; font-family: 'VT323', monospace; font-size: 14px; padding: 4px; margin-bottom: 6px; border: 1px inset #000; text-align: left;">
+                                ▶ [02:14 / 03:45]<br>
+                                <span style="color: #fff;">♪ Playing: Retro Y2K Vibe.mp3</span>
+                            </div>
+                            
+                            <!-- Player de áudio HTML5 padrão integrado com visual retrô -->
+                            <audio controls style="width: 100%; height: 28px;">
+                                <source src="sua-musica.mp3" type="audio/mpeg">
+                                Seu navegador não suporta áudio.
+                            </audio>
+                        </div>
+                    </div>
+
+                    <!-- Janela: Seção de Updates -->
+                    <div class="retro-box">
+                        <div class="retro-box-header"><span>📌 updates</span></div>
+                        <div class="retro-box-content" style="font-size: 11px;">
+                            <p><strong>jan. 8:</strong> finished my collections page, thinking of making an entry page as my index and a separate .html file for the homepage.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Barra de Tarefas Estilo Windows -->
+    <div class="taskbar">
+        <button class="start-btn">start ❖ AIM</button>
+        <div class="task-window">
+            <span>📁</span> Project_Portfolio.exe
+        </div>
+    </div>
+
+</body>
+</html>

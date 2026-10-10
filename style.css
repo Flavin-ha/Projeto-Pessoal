@@ -1,0 +1,281 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #008080; /* Fundo clássico cor de teal do Windows 95/XP */
+    background-image: linear-gradient(45deg, #005555 25%, transparent 25%), 
+                      linear-gradient(-45deg, #005555 25%, transparent 25%), 
+                      linear-gradient(45deg, transparent 75%, #005555 75%), 
+                      linear-gradient(-45deg, transparent 75%, #005555 75%);
+    background-size: 20px 20px;
+    font-family: 'MS Sans Serif', Arial, sans-serif;
+    color: #000;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header-banner {
+    border: 2px inset #fff;
+    background: #000;
+    height: 110px;
+    margin-bottom: 8px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    background-image: url('header.jpg'); /* Opcional: coloque a imagem de fundo do banner aqui */
+    background-size: cover;
+}
+
+/* Layout de 3 Colunas com a proporção exata da referência */
+.main-layout {
+    display: grid;
+    grid-template-columns: 160px 1fr 240px;
+    gap: 8px;
+}
+
+/* --- ESTILOS DA COLUNA 1 E SEUS BLOCOS --- */
+
+/* Caixa estilo retro em relevo com divisória */
+.retro-box {
+    background: #ece9d8;
+    border: 2px solid;
+    border-color: #fff #808080 #808080 #fff;
+    margin-bottom: 8px;
+}
+
+/* Cabeçalho da caixinha (ex: visitor count, main, fun) */
+.retro-box-header {
+    background: #d4d0c8;
+    color: #000;
+    padding: 3px 6px;
+    font-weight: bold;
+    font-size: 11px;
+    border-bottom: 1px solid #808080;
+    font-family: 'MS Sans Serif', Arial, sans-serif;
+    letter-spacing: 0.5px;
+}
+
+/* Conteúdo interno com borda rebaixada (efeito clássico) */
+.retro-box-content {
+    background: #fff;
+    border: 1px inset #fff;
+    padding: 6px;
+    font-size: 11px;
+}
+
+/* Contador de visitantes no estilo digital antigo */
+.visitor-counter {
+    text-align: center;
+    font-family: 'VT323', monospace;
+    font-size: 22px;
+    letter-spacing: 4px;
+    background: #000;
+    color: #00ff00; /* Luz verde digital clássica */
+    padding: 2px;
+    border: 1px inset #000;
+}
+
+/* Lista de navegação lateral (Menu links) */
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list li {
+    margin-bottom: 3px;
+}
+
+.menu-list a {
+    display: block;
+    background: #ece9d8;
+    border: 1px solid;
+    border-color: #fff #808080 #808080 #fff;
+    padding: 3px 6px;
+    color: #000;
+    text-decoration: none;
+    font-size: 11px;
+    font-family: 'MS Sans Serif', Arial, sans-serif;
+    text-align: center;
+}
+
+/* Efeito de clique / hover nos botões do menu */
+.menu-list a:hover {
+    background: #000080;
+    color: #fff;
+    border-color: #808080 #fff #fff #808080;
+}
+
+/* FIM COLUNA 1 */
+
+/* --- ESTILOS DA COLUNA 2 E SEUS BLOCOS --- */
+.retro-box-content h1 {
+    font-size: 15px;
+    font-family: 'MS Sans Serif', Arial, sans-serif;
+    margin-bottom: 6px;
+}
+
+.retro-box-content p {
+    font-size: 12px;
+    line-height: 1.4;
+    margin-bottom: 6px;
+    color: #222;
+}
+/* FIM COLUNA 2 */
+
+/* --- ESTILOS DA COLUNA 3 E SEUS BLOCOS --- */
+.chat-box-content {
+    max-height: 160px;
+    overflow-y: auto;
+    background: #fff;
+    border: 1px inset #fff;
+}
+
+/* Estilos para o Player de Música */
+audio {
+    filter: grayscale(0.5) contrast(1.2);
+    border-radius: 2px;
+    outline: none;
+}
+
+/* Garante o comportamento correto das 3 colunas lado a lado */
+.main-layout {
+    display: grid;
+    grid-template-columns: 160px 1fr 220px; /* Largura da Coluna 1, Centro flexível, Coluna 3 */
+    gap: 8px;
+}
+/* FIM COLUNA 3 */
+
+/* Janela Estilo Windows XP / Retro */
+.window {
+    background: #c0c0c0;
+    border: 2px solid;
+    border-color: #dfdfdf #808080 #808080 #dfdfdf;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+    width: 90%;
+    max-width: 750px;
+    margin: auto;
+    position: relative;
+}
+
+.title-bar {
+    background: linear-gradient(90deg, #000080, #1084d0);
+    color: white;
+    padding: 4px 8px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.title-bar-controls button {
+    background: #c0c0c0;
+    border: 1px solid;
+    border-color: #dfdfdf #808080 #808080 #dfdfdf;
+    width: 16px;
+    height: 16px;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 10px;
+    cursor: pointer;
+}
+
+.window-body {
+    padding: 15px;
+    background: #ece9d8;
+    max-height: 65vh;
+    overflow-y: auto;
+}
+
+h1 {
+    font-size: 22px;
+    color: #000080;
+    margin-bottom: 10px;
+    font-family: 'VT323', monospace;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 13px;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+/* Caixa de Recurso Estilo Alerta */
+.alert-box {
+    border: 2px inset #fff;
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.alert-icon {
+    font-size: 24px;
+}
+
+/* Botões Estilo Retro */
+.retro-btn {
+    background: #ece9d8;
+    border: 2px solid;
+    border-color: #fff #808080 #808080 #fff;
+    padding: 6px 15px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 12px;
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+}
+
+.retro-btn:active {
+    border-color: #808080 #fff #fff #808080;
+    padding: 7px 14px 5px 16px;
+}
+
+/* Barra de Tarefas Inferior */
+.taskbar {
+    background: #ece9d8;
+    border-top: 2px solid #fff;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+    gap: 5px;
+    z-index: 999;
+}
+
+.start-btn {
+    background: #2a52be;
+    color: white;
+    font-weight: bold;
+    border: 2px solid;
+    border-color: #fff #000 #000 #fff;
+    padding: 2px 10px;
+    cursor: pointer;
+    font-style: italic;
+}
+
+.task-window {
+    background: #d4d0c8;
+    border: 2px solid;
+    border-color: #808080 #fff #fff #808080;
+    padding: 4px 10px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
